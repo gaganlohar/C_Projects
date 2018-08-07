@@ -1,0 +1,21 @@
+#include <iostream>
+#include <stdio.h>  // Header file used to allow all keyboard keys //
+using namespace std ;
+int main()
+{
+    string sign;  // String is used to allow any type of sign //
+    cout << "Which sign you want to print : " << endl << sign;
+    cin >> sign;
+    int n;
+    cout << "Enter the value how many times you want to print your sign :" << endl;
+    cin >> n;
+    cout << endl << "Your output is :" << endl << endl;
+    for (int i = 1; i <= n; ++i)
+    {
+        for (int j = 1; j <= i ; ++j)
+        {
+            cout << sign << " ";
+        }
+        cout << endl ;
+    }
+  return 0; }

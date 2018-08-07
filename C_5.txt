@@ -1,0 +1,4 @@
+for ( int counter=1 ; counter <=5 ; counter++ )    // for infinite loop put for(initialise=0  ;                 condition =0  ; inc & dcr updating=0   )  [ example:-   for (  ;  ;   ) ]  //
+       {
+             cout << counter << "-> you are lucky" << endl;
+        }

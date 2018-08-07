@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+struct student{
+       int rollno ;
+       char sex ;
+};  // we can declare student name here also //
+
+int main()
+{
+    student gagan , jalaj , rahul , shanu  ; //but declaring student name here will be much user friendly and we can initialise student name but in curly brackets followed by ' ; ' //
+
+    gagan.rollno = 25; // you can write this statement using pointer also 
+                                                  ex-   student *gaganptr;
+                                                           gaganptr = &gagan;
+                                                           gaganptr->rollno=25 or gagan.rollno=25; (same)   //
+    gagan.sex = 'm';
+
+    jalaj.rollno = 20;
+    jalaj.sex = 'm';
+
+    rahul.rollno = 35;
+    rahul.sex = 'm';
+
+    shanu.rollno = 45;
+    shanu.sex = 'm';
+
+    cout << gagan.rollno << endl << gagan.sex << endl << jalaj.rollno << endl << jalaj.sex    << endl << rahul.rollno << endl << rahul.sex << endl << shanu.rollno << endl << shanu.sex << endl;
+}

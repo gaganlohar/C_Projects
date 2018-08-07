@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+char input ;
+cout << "What is your grade" << endl;
+cin >> input;
+
+switch(input)
+      {
+          case 'A' :
+          case 'a' :{
+                     cout << "Excellent" << endl;
+                     break;
+                   }
+          case 'B' :
+          case 'b' :{
+                     cout << "Good" << endl;
+                     break;
+                   }
+          case 'C' :
+          case 'c' :{
+                     cout << "Poor" << endl;
+                     break;
+                   }
+      }
+
+    return 0;
+}

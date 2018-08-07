@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int age;
+    cout << "Enter your Birth Year" << endl ;
+    cin >> age;
+    if ( age >= 1990 && age <= 1994)
+    cout << "Your Birth Year is valid" << endl ;
+     else
+         if ( age == 1989)
+        {
+          2+age;
+          cout << "Your Birth Year is incremented "<< endl << 2+age;
+        } else
+        {
+              if ( age == 1995)
+              age-2;
+              cout << "Your Birth Year is decremented "<< endl << age-2 ;   
+        }   return 0;}

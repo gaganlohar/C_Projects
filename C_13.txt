@@ -1,0 +1,6 @@
+int main()
+{
+int age[5] = {20 , 22, 24, 26, 28} ;
+cout  <<  age[2]  << endl;    //  Both have same meaning age[2] and *(age+2)  //
+cout <<  *(age  + 2) << endl ;  // if we type age+2 then it will give the address of 24 //
+}                

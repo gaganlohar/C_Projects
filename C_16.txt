@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std ;
+
+int main()
+{
+    int *pointer = NULL ;
+    cout << "How many items you have to enter : " << endl;
+
+    int input;
+    cin >> input ;
+
+    pointer = new int[input]; // 'New' data type will allow to allocate  on new memory on   'Heap memory'//
+
+    int temp;   
+ for (int counter = 0; counter < input; counter++)
+        {
+            cout << "Enter the item  " << counter+1 << endl ;
+            cin >> temp;
+            *(pointer+counter) = temp;
+        }
+    cout << "Names you have entered are : "  << endl ;
+
+    for (int counter = 0; counter < input; counter++)
+        {
+            cout << counter+1 << "  name is  " << *(pointer + counter) << endl;
+        }
+    delete []pointer ; //Delete data type delete the memory on heap memory after using becoz when another program is running then it should not use the previous data  //
+return 0;
+}

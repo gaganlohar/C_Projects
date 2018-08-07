@@ -1,0 +1,8 @@
+// first compile the expression  and then print  statement //
+
+int counter = 1 ;
+while(counter <=5)
+          {
+              cout << counter << "-> you are lucky" << endl;
+              counter++;
+           }

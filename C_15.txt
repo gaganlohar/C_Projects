@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct address{
+       int house_no ;
+       string street_name ;
+};
+
+struct student{
+       string name ;
+       int roll_no ;
+       string sex ;
+       int age ;
+       address addr ;   // you must declare the nested structure here otherwise you can't access "address " data in next loop  //
+};
+
+int main()
+{
+    student gagan ;
+
+    gagan.roll_no = 270;
+    gagan.sex = "male";
+    gagan.age = 26 ;
+    gagan.addr.house_no = 35 ;
+    gagan.addr.street_name = "gadiya devra" ;
+
+    cout << "Your name is =  " ;
+    cin >> gagan.name;
+    cout << "Your roll_no is =  " << gagan.roll_no << endl;
+    cout << "Your sex is =  " << gagan.sex << endl;
+    cout << "Your house_no is =  " << gagan.addr.house_no << endl;
+    cout << "Your street_name is =  " << gagan.addr.street_name << endl;
+}

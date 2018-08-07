@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ int age = 26;
+ int rollno = 35 ;
+
+ int *ageptr;
+ int *rollnoptr;
+
+ ageptr = &age;
+ rollnoptr = &rollno;
+
+ cout << "Your age is " << age << endl;
+ cout << &age <<endl;  // &age will hold the address of value 26  //
+ cout << "Your rollno is " << rollno << endl;
+ cout << &rollno <<endl;   // &rollno will hold the address of value 35  //
+
+ cout << ageptr << endl; // ageptr is assigned pntr name of the address of value 26  //
+ cout << *ageptr <<endl; // *ageptr hold the value 26 of assigned pntr name   //
+ cout << rollnoptr << endl;  // rollnoptr is assigned name of the address of value 35  //
+ cout << *rollnoptr <<endl; // *rollnoptr hold the value 35 of assigned pntr name   //
+
+    return 0;
+}

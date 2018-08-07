@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+using namespace std ;
+
+class Human{
+
+string name;   // If we not declare access specifier then it is predefined Private //
+int age;
+
+public :
+    Human(string iname, int iage){
+        name = iname;
+        age = iage;
+        }
+    friend void show (Human Person);  // Friend function prototype //
+};
+void show (Human Person){  // Friend function outside the class  who can access all the members of the class Human and same as we can declare for the Friend Class also //
+    cout << "Hi my name is " << Person.name << " and my age is " << Person.age << endl;
+}
+int main()
+{
+    Human Gagan("Gagan", 26);
+    show (Gagan);
+  return 0;
+}

@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std ;
+class Father{
+protected :
+    int height ;
+public :
+    Father (){
+        cout << "Constructor of name Father is called" << endl;
+    }};
+
+class Mother{
+protected :
+    string color; ;
+public :
+    Mother (){
+        cout << "Constructor of name Mother is called" << endl;
+    }};
+
+class child : public Father, public Mother{  //Multiple inheritance//
+public :
+    child (int x, string y) : Father(), Mother(){  //Passing value from derived class child to base class Father & Mother//
+        height = x;
+        color = y;
+        cout << "Constructor of name child is called " << endl;
+    }
+    void display (){
+        cout << "The height of the Father is " << height << endl;
+        cout << "The color of the Mother is " << color << endl;
+    }};
+
+int main()
+{
+    child gagan(6, "White");
+    gagan.display();
+
+  return 0;
+}

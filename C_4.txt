@@ -1,0 +1,10 @@
+// first print the statement and then compile the expression //
+
+char input;
+        do
+           {
+            cout << "You are lucky " << endl;
+            cout << "You are eligible for the course " << endl;
+            cout << "Enter 'n' to exit or Enter any key to see this message again" << endl;
+            cin >> input;
+            }while ( input != 'n');

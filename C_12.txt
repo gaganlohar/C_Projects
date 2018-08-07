@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void displaycheck (int[] , int[] );
+int main()
+{
+    int arr1[] = {20,22,24,26,28};
+    int arr2[] = {40,12,44,16,18};
+   
+ displaycheck( arr1 , arr2 );
+
+    return 0;
+}
+void displaycheck ( int arr1[] , int arr2[] )
+{
+    for ( int counter = 0 ; counter <5 ; counter++ )
+       {
+        cout << arr1[counter] << endl << arr2[counter] << endl;
+
+        if ( arr1[counter] > arr2[counter] )
+
+        cout << "arr1" << "+ " << "arr2" << " = " << arr1[counter] + arr2[counter] << endl ;
+    else
+        cout << "arr1" << "- " << "arr2" << " = " << arr1[counter] - arr2[counter] << endl ;
+       } 
+}

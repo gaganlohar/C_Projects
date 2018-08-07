@@ -1,0 +1,21 @@
+#include <iostream>
+     using namespace std ;
+
+class Human{ //classes are almost same as structures and here we declare classname//
+private :   // These are called access specifers ...as the name they do there work  //
+    int age ;
+
+public :
+
+    void displayage(int age){
+        cout << age-5 << endl;
+    }
+};
+
+int main()
+{
+    Human gagan;
+    gagan.displayage(29);
+
+  return 0;
+}

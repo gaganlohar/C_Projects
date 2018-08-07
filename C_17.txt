@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std ;
+
+int factorial ( int n ) ;
+
+int main()
+{
+cout << factorial ( 5 ) ;
+return 0;
+}
+
+int factorial ( int n ) 
+{
+  if ( n == 1 )
+           return 1;
+     else
+           return n * factorial ( n-1 ) ;  // In this function when we pass value 5 then   :-   "return 5* factorial (4)"  then factorial (4) again passes to the function and then becomes return 4*factorial(3).........and so on till the  factorial (1) which will unmatch the if argument....the the value becomes 120    //
+}

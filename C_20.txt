@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std ;
+
+class Human{
+
+private :
+    string *name;
+    int *age;
+
+public :
+    Human(string iname,  int iage){   // This is called Constructor //
+
+        name = new string;
+        age = new int;
+
+        *name = iname;
+        *age = iage;
+
+        cout << "Constructor is called" << endl;
+    }
+    void display(){
+        cout << "Hi I am " << *name << " and my age is " << *age << endl;
+    }
+
+    ~Human(){     // This is called Destructor //
+
+        delete name;
+        delete age;
+
+        cout << "Destructor is called" << endl;
+    }
+};
+
+int main()
+{
+    Human *gagan;  // Calling Constructor //
+    gagan = new Human("Gagan" , 26);
+    gagan -> display();
+    delete gagan;   // Calling Destructor - destructor will delete the used memory by constructor  //
+
+  return 0;
+ }

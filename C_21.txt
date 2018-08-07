@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std ;
+
+class Human{
+public :
+
+    static int People_count;   // static keyword is used in classes when we want to execute variable only one time but when we call the static variable more than one time it will not execute but its value is increased  //
+
+    Human(){
+        People_count++;   // From here static variable get incremented //
+    }
+
+    void display(){
+        cout << "There are " << People_count << " People in this program " << endl;
+    }
+
+    static void Peoplecount(){     // Displaying function of static variable //
+       cout << "There are " << People_count << " People in this program " << endl;
+    }};
+int Human :: People_count = 0; // We have to initialise static variable through scope resolution ....we can't initialise static variable in classes   //
+
+int main()
+{
+    Human Gagan;
+    Human Jalaj;
+    Human Tanmay;
+    Human Himangi;
+
+    Himangi.display();
+
+    Human :: Peoplecount();        // calling static function //
+
+  return 0;
+}

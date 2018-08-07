@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int display( int x , int y );   //Function Prototype //
+
+int main()
+{
+    int result ;
+    result = display( 25 , 20 );  //Function calling//
+    cout << "Your result is  " << result<< endl;
+    return 0;
+}
+int display( int x , int y )   //int Function becoz we are returning some value otherwise we can use void//
+{
+  cout << "Your age1 is -> " << x << endl;
+  cout << "Your age2 is -> " << y << endl;
+  return x+y;   //return  some value//
+}
+

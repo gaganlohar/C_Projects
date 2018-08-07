@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int counter ;
+    for( counter = 1 ; counter <= 10 ; counter++)
+    {
+    cout << counter << endl ;
+    if (counter == 5)  // when the counter becomes 5 then it will break and the output   print from 1 to 5 only //
+// and when we use continue then 5 will skip and the result  will be 1 to 4 and 6 to 10....5 will be skipped //
+    break OR continue;
+    }
+    return 0;
+}

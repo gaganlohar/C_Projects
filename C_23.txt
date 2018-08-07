@@ -1,0 +1,36 @@
+.- #include <iostream>
+     #include <string>
+using namespace std ;
+
+class Person{  // Base class //
+protected : // protected access specifier same as private but with one benefit is that all the member function of the protected can be easily access able to no. of sub class //
+    string school_name;
+public :
+    string name;
+    int age;
+
+    void setname(string iname ){name = iname;} // We can write this way also//
+    void setage(int iage ){age = iage;}
+};
+
+class student : public Person{  // Sub class - In this class we are inheriting Base class member function and can use them easily   //
+public :
+     int id;
+     void setid(int iid){id = iid;}
+     void setschool_name(string ischool_name){school_name =  ischool_name;}
+
+     void introduce (){
+         cout << "Hi my name is " << name << " and I am " << age << " years old "<< endl;
+         cout << "I studying in " << school_name << " and my student ID is " << id << endl;     }};
+int main()
+{
+    student Gagan;
+    Gagan.setname ("Gagan"); // All member function can be call from the sub class //
+    Gagan.setage (26);
+    Gagan.setid (12345);
+    Gagan.setschool_name (" KV ");
+
+    Gagan.introduce();
+
+  return 0;
+}
